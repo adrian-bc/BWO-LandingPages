@@ -1,285 +1,339 @@
+<!-- CTA Block Styling -->
+<style>
+    .card {
+        padding: 20px;
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .card-title {
+        font-weight: 800;
+        line-height: 1.1;
+        font-size: 2rem;
+        font-family: 'Muli', sans-serif;
+        font-style: normal;
+        text-transform: uppercase;
+        color: black;
+        padding-top: 15px;
+        margin-bottom: 1rem
+    }
+
+    .card-title::after {
+        background-color: transparent !important;
+        margin-top: 0px;
+    }
+
+    .card-text {
+        margin-bottom: 2em !important;
+        color: #6d6d6d !important;
+    }
+
+    .card ul {
+        padding-left: 0em !important;
+    }
+
+    #wwyrb li ul {
+        padding-left: 0em !important;
+    }
+
+    .card-btn {
+        background: #373737;
+        border: solid #373737 1px;
+        color: white !important;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+        display: block;
+        margin: auto;
+    }
+
+    .card-btn:hover {
+        background: transparent;
+        color: #373737 !important;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .card {
+            padding: 25px 5px;
+        }
+
+        .card-text {
+            font-size: 12px;
+        }
+
+        .card-btn {
+            font-size: 12px;
+            padding: 7px 20px
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .card-title {
+            font-size: 1.5rem;
+            padding-top: 5px;
+            /* text-align: center; */
+        }
+    }
+</style>
+
+<!-- JS ID Styling -->
+<style>
+    #career1Text,
+    #career2Text,
+    #career3Text,
+    #career4Text,
+    #career5Text {
+        display: none;
+    }
+</style>
+
+<!-- Read More JS -->
+<script>
+    function readMore(dotID, text, bttn) {
+        const dots = document.getElementById(dotID);
+        const moreText = document.getElementById(text);
+        const btnText = document.getElementById(bttn);
+
+        if (dots.style.display === 'none') {
+            dots.style.display = 'inline';
+            btnText.innerHTML = 'READ MORE';
+            moreText.style.display = 'none';
+        } else {
+            dots.style.display = 'none';
+            btnText.innerHTML = 'READ LESS';
+            moreText.style.display = 'inline';
+        }
+    }
+</script>
+
 <div class="container">
-    <div class="row">
+    <!-- Customer Service Advisor -->
+    <!-- <div class="row">
         <div class="col-xs-12">
-            <h3>Latest Jobs</h3>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-xs-12">
-            <hr>
-            <h3>JOB DESCRIPTION</h3>
-            <h4>SALES TEAM ASSISTANT</h4>
-            <h4>BASED: SK86QH GREATER MANCHESTER</h4>
-            <p>
-                Beauty Works is an Award winning range of Luxury hair extensions. Dealing with Salon accounts across the
-                United Kingdom we are looking for a confident individual to become part of our team and manage specific
-                accounts. This is a fanatic opportunity for someone that is looking to develop a career in sales in the
-                hair and beauty sector. The ideal candidate will be confident, enthusiastic individual and enjoy working
-                in a fast paced dynamic environment with admin and/or sales experience. Working as part of a team and
-                taking direction from the sales managers you must have excellent communication skills and be highly
-                organised.
-                <br><br>
-                The position is based at our Head Office in Handforth, Greater Manchester
-                <br><br>
-                Full time position, commencing in February 2020
-                <br><br>
-                40 Hours per week – 9-5pm
-                <br><br>
-                £18-£20k depending on experience
-                <br><br>
-                Desk Based with Mobile Phone
-                <br><br>
-                Please email holly@beautyworks.co.uk with CV and cover letter.
-                <br><br>
-                Applications close on 31st January 2020
-            </p>
-            <div class="table">
-                <div class="tr">
-                    <div class="td">
-                        <h5>Key Responsibilities</h5>
-                    </div>
-                    <div class="td">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Customer Service Advisor</h3>
+                    <p>
+                        Now is an exciting time to join our company. Due to expansion and growth a fantastic opportunity
+                        has arisen for a dynamic and committed customer service professional to join our team.<span
+                            id="career1Dots">....</span>
+                    </p>
+                    <span id="career1Text">
+                        <h4>Position:</h4>
+                        <p>To process and resolve inbound customer enquiries and orders, identifying and understanding
+                            customer needs and always providing a consistently high quality service.
+                            Providing excellent customer service to all our customers and clients. Working towards
+                            achieving maximum profitability and growth in line with the company vision and values.
+                        </p>
+                        <h4>Main Tasks and Responsibilities</h4>
                         <ul>
-                            <li>Management of all new trade account enquires, responding with all information required
-                                until ready to open an account and pass over to an account manager</li>
-                            <li>Creating online accounts for trade customers when required</li>
-                            <li>To assist the Head of International Sales with international accounts including,
-                                tracking orders, taking orders & payments</li>
-                            <li>To help trade customers with any issues, colour matching for their clients, advising of
-                                new products, educations dates and key marketing events across the year </li>
-                            <li>To support the sales team with incoming trade account phone orders</li>
-                            <li>Support for logging all bookings for training courses & sending confirmations for the
-                                team</li>
-                            <li>To assist with the new sales & marketing material for 2020 – (brochure’s etc.)</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="tr">
-                    <div class="td">
-                        <h5>Person Specification</h5>
-                    </div>
-                    <div class="td">
-                        <ul>
-                            <li>5 GCSEs or equivalent</li>
-                            <li>Quick ability to learn</li>
-                            <li>Punctuality and good time management skills</li>
-                            <li>Experience working in a admin/sales environment</li>
-                            <li>Ability to communicate effectively both on the phone, including Whatsapp and on email
+                            <li>Dealing directly with customers either by telephone, electronically or face to face
                             </li>
-                            <li>Excellent multitasking and organisational skills</li>
-                            <li>Self-motivated with ability to work independently as well as in a team and under
-                                pressure</li>
+                            <li>Respond promptly to customer enquiries/orders</li>
+                            <li>Handle and resolve customer complaints</li>
+                            <li>Obtain and evaluate all relevant information to handle product and service enquiries
+                            </li>
+                            <li>Provide pricing and delivery information</li>
+                            <li>Process orders, forms, applications and requests</li>
+                            <li>Organize workflow to meet customer timeframes</li>
+                            <li>Direct requests and unresolved issues to the designated resource</li>
+                            <li>Keep records of customer interactions and transactions</li>
+                            <li>Record details of enquiries, comments and complaints</li>
+                            <li>Record details of actions taken</li>
+                            <li>Maintain customer databases</li>
+                            <li>Manage administration</li>
+                            <li>Communicate and coordinate with internal departments</li>
+                            <li>Follow up on customer interactions, identify sales potentials and refer accordingly
+                            </li>
+                            <li>Provide feedback on the efficiency of the customer service process</li>
                         </ul>
-                    </div>
+                        <h4>Experience:</h4>
+                        <p>Minimum of 12 months customer service experience working at a similar position. NVQ level 2
+                            in Customer Services preferred but not essential. Experience of working in a
+                            pressurised/fast paced environment is essential.
+                        </p>
+                        <h4>Hours of work:</h4>
+                        <p>37.5 hours a week between the hours of 09.00 – 17.00 Mon – Fri some flexibility is required.
+                        </p>
+                        <h4>Main Tasks and Responsibilities</h4>
+                        <ul>
+                            <li>28 days holiday per year (Including Bank Holidays), with the opportunity to accrue
+                                additional days.</li>
+                            <li>Health Shield Scheme</li>
+                            <li>Company Bonus Scheme</li>
+                            <li>Hair Allowance</li>
+                            <li>Generous Staff Discount</li>
+                        </ul>
+                        <h4>Location</h4>
+                        <p>South Manchester</p>
+                        <h4>Applications</h4>
+                        <p>To apply for this role please email <a
+                                href="mailto:gemma@beautyworks.co.uk?subject=Customer Service Advisor">gemma@beautyworks.co.uk</a>
+                            with your CV and cover letter. All successful candidates will be notified of interview dates
+                            via email.</p>
+                    </span>
+                    <button class="card-btn" onclick="readMore('career1Dots','career1Text', 'career1Btn')"
+                        id="career1Btn" title="">Read More</button>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="row">
+    <!-- Sales & Training Administrator -->
+    <!-- <div class="row">
         <div class="col-xs-12">
-            <hr>
-            <h3>JOB DESCRIPTION</h3>
-            <h4>MARKETING INTERN</h4>
-            <h4>BASED: SK86QH GREATER MANCHESTER</h4>
-            <p>
-                3 month paid position, commencing in January 2020
-                <br><br>
-                Beauty Works is an Award Winning supplier of luxury hair extensions. An opportunity has arisen for a
-                passionate individual to join the Uk’s n01 brand of hair extensions.
-                <br><br>
-                Established in 2010 Beauty Works is already a salon recognized name with an impressive UK growth plan,
-                and a strong presence in the Global market. Experiencing strong growth online and planning to attack new
-                global markets an opportunity has arisen to expand the team.
-                <br><br>
-                The ideal candidate will be Degree educated - at least 1years experience working in social media ideally
-                in fashion or beauty is beneficial but not compulsory. You will have a passion for social media, an
-                understanding of the different social media platforms and how they can be used in a business setting,
-                and feel confident in creating content for a range of different audiences, with support from the rest of
-                the Marketing Team. You must enjoy working within a team and be passionate about the industry with an
-                interest in beauty and fashion.
-            </p>
-            <div class="table">
-                <div class="tr">
-                    <div class="td">
-                        <h5>Job Title</h5>
-                    </div>
-                    <div class="td">
-                        <p>Marketing Intern</p>
-                    </div>
-                </div>
-                <div class="tr">
-                    <div class="td">
-                        <h5>Department</h5>
-                    </div>
-                    <div class="td">
-                        <p>Marketing</p>
-                    </div>
-                </div>
-                <div class="tr">
-                    <div class="td">
-                        <h5>Hours and Location</h5>
-                    </div>
-                    <div class="td">
-                        <p>40 hours – Monday – Friday</p>
-                    </div>
-                </div>
-                <div class="tr">
-                    <div class="td">
-                        <h5>Responsible to</h5>
-                    </div>
-                    <div class="td">
-                        <p>Marketing Manager</p>
-                    </div>
-                </div>
-                <div class="tr">
-                    <div class="td">
-                        <h5>Job Purpose</h5>
-                    </div>
-                    <div class="td">
-                        <p>Marketing Intern</p>
-                    </div>
-                </div>
-                <div class="tr">
-                    <div class="td">
-                        <h5>Main Duties</h5>
-                    </div>
-                    <div class="td">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Sales & Training Administrator</h3>
+                    <p>
+                        Beauty Works is an Award Winning supplier of luxury hair extensions. An opportunity has arisen
+                        for a passionate individual to join one of the UK’s fastest growing hair brands. Established in
+                        2010, Beauty Works is already a salon recognized name with an impressive UK growth plan, and a
+                        strong presence in the UK market. <span id="career2Dots">....</span>
+                    </p>
+                    <span id="career2Text">
+                        <h4>Department:</h4>
+                        <p>Trade Sales</p>
+                        <h4>Hours and Location:</h4>
+                        <p>Full Time – Monday to Friday – Office</p>
+                        <h4>Responsible to:</h4>
+                        <p>Sales Manager</p>
+                        <h4>Job Purpose:</h4>
+                        <p>Working within a fast-paced sales environment, we are looking for a highly organised and
+                            experienced Administrator to support our sales enquiry process and customer training setup.
+                        </p>
+                        <h4>Main Duties:</h4>
                         <ul>
-                            <li>Management of Twitter, Facebook, YouTube, Instagram and other social media accounts.
-                            </li>
-                            <li>Copywriting - writing content for blog.</li>
-                            <li>Organize any gifting and liaise with influencers, celebrities and celebrity stylists.
-                            </li>
-                            <li>Help plan and share ideas to target new strategies, working alongside the Marketing
-                                team.</li>
-                            <li>Report directly to team leader to ensure daily workload is completed daily.</li>
-                            <li>Run social media competitions across platforms and liaise with other suitable brands to
-                                organise weekly.</li>
-                            <li>Assist on branded photoshoots and content days.</li>
-                            <li>Assist with the organisation of branded events.</li>
-                            <li>Create and contribute to monthly reports showing an analysis of activities undertaken.
-                            </li>
-                            <li>Add and upload daily imagery to social media platforms in-house.</li>
+                            <li>Managing a high volume of daily email enquiries</li>
+                            <li>Ensuring all relevant paperwork is issued</li>
+                            <li>Chasing unsigned outstanding terms of business</li>
+                            <li>Allocating qualified leads to relevant Senior Account Manager</li>
+                            <li>Proactively assisting with lead generation research</li>
+                            <li>Managing training course bookings includning liaising with Delegates, Educators and
+                                training venues</li>
+                            <li>Supporting Account Managers with day-to-day administration requests</li>
                         </ul>
-                    </div>
-                </div>
-                <div class="tr">
-                    <div class="td">
-                        <h5>Person specification</h5>
-                    </div>
-                    <div class="td">
+                        <h4>Person specification:</h4>
                         <ul>
-                            <li>Knowledge of online marketing and good understanding of major marketing channels.</li>
-                            <li>Keen interest in influencer and social media marketing.</li>
-                            <li>Positive attitude, detail and customer oriented with good multitasking and
-                                organizational ability.</li>
-                            <li>Project management skills.</li>
-                            <li>Punctuality and good time management skills.</li>
-                            <li>Strong written and verbal skills.</li>
-                            <li>Degree educated.</li>
-                            <li>Full UK driving license and have access to a car</li>
+                            <li>Methodical and organised</li>
+                            <li>Confident on the telephone with excellent telephone manner</li>
+                            <li>Positive attitude</li>
+                            <li>Ability to work under pressure</li>
+                            <li>Enjoy working in a team in a sales environment</li>
+                            <li>Proficient in MS Word/Excel</li>
                         </ul>
-                    </div>
+                        <h4>Location</h4>
+                        <p>South Manchester</p>
+                        <h4>Applications</h4>
+                        <p>To apply for this role please email <a
+                                href="mailto:holly@beautyworks.co.uk?subject=Sales & Training Administrator">holly@beautyworks.co.uk</a>
+                            with your CV and cover letter. All successful candidates will be notified of interview dates
+                            via email.</p>
+                    </span>
+                    <button class="card-btn" onclick="readMore('career2Dots','career2Text', 'career2Btn')"
+                        id="career2Btn" title="">Read More</button>
                 </div>
             </div>
-            <p>
-                Please email prteam@beautyworks.co.uk with CV and cover letter.
-                <br><br>
-                Apply by 12th of January 2020
-            </p>
         </div>
-    </div>
+    </div> -->
 
-    <div class="row">
+    <!-- Ecommerce Assistant -->
+    <!-- <div class="row">
         <div class="col-xs-12">
-            <hr>
-            <h3>JOB DESCRIPTION</h3>
-            <h4>CUSTOMER SERVICE ASSISTANT</h4>
-            <h4>PART TIME HOURS (24 HOURS PER WEEK, COMPETITIVE SALARY WITH BONUS AND INCENTIVES)</h4>
-            <h4>BASED: SK86QH GREATER MANCHESTER</h4>
-            <p>
-                Beauty Works is an Award Winning supplier of luxury hair extensions. An opportunity has arisen for a
-                passionate individual to join the UK’s No.1 brand of hair extensions.
-                <br><br>
-                Established in 2010 Beauty Works is already a salon recognized name with an impressive UK growth plan,
-                and a strong presence in the UK market. We are now looking for an experienced social media/customer
-                service assistant.
-            </p>
-            <div class="table">
-                <div class="tr">
-                    <div class="td">
-                        <h5>Job Title</h5>
-                    </div>
-                    <div class="td">
-                        <p>Customer Service Assistant</p>
-                    </div>
-                </div>
-                <div class="tr">
-                    <div class="td">
-                        <h5>Department</h5>
-                    </div>
-                    <div class="td">
-                        <p>Customer Service</p>
-                    </div>
-                </div>
-                <div class="tr">
-                    <div class="td">
-                        <h5>Hours and Location</h5>
-                    </div>
-                    <div class="td">
-                        <p> 24 hours – Office and Home Based</p>
-                    </div>
-                </div>
-                <div class="tr">
-                    <div class="td">
-                        <h5>Responsible to</h5>
-                    </div>
-                    <div class="td">
-                        <p>Customer Service Manager</p>
-                    </div>
-                </div>
-                <div class="tr">
-                    <div class="td">
-                        <h5>Job Purpose</h5>
-                    </div>
-                    <div class="td">
-                        <p>Customer Service Assistant focusing on Social Media</p>
-                    </div>
-                </div>
-                <div class="tr">
-                    <div class="td">
-                        <h5>Main Duties</h5>
-                    </div>
-                    <div class="td">
-                        <ul>
-                            <li>Deal with direct DMs</li>
-                            <li>Work with Brand Templates</li>
-                            <li>Be fast and effective when replying</li>
-                            <li>Dealing with customer queries via email</li>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Ecommerce Assistant</h3>
+                    <br>
+                    <h4>What will the role include?</h4>
+                    <ul style="margin-bottom: 0;">
+                        <li>Uploading and updating products including writing descriptions and uploading imagery.</li>
+                        <li>Merchandising & upselling products to ensure best sellers and key products are highlighted.
+                        </li>
+                        <li>Writing SEO descriptions and producing blog content.<span id="career3Dots">....</span></li>
+                    </ul>
+                    <span id="career3Text">
+                        <ul style="margin-top: 0;">
+                            <li>Uploading price changes.</li>
+                            <li>Making & testing promo codes.</li>
+                            <li>Support the execution of onsite content, campaigns and trading activity.</li>
+                            <li>Proof-reading marketing emails & auditing the website on a daily basis.</li>
+                            <li>General admin duties and assisting the eCommerce and Marketing teams.</li>
+                            <li>Build effective working relationships and actively participate in internal meetings.
+                            </li>
                         </ul>
-                    </div>
-                </div>
-                <div class="tr">
-                    <div class="td">
-                        <h5>Person specification</h5>
-                    </div>
-                    <div class="td">
-                        <ul>
-                            <li>Experience in social media and ability demonstrate previous work</li>
-                            <li>Positive attitude, detail and customer oriented with good</li>
-                            <li>Multitasking and organizational ability</li>
-                            <li>Excellent consulting, writing, editing (photo/video/text), Punctuality and good time
-                                management skills</li>
-                            <li>Strong written skills</li>
-                            <li>Initiative to work proactively and independently</li>
+                        <h4>What will your responsibilities be?</h4>
+                        <ul id="wwyrb">
+                            <li>
+                                <b>Trading</b><br>
+                                <ul>
+                                    <li>Working closely with Ecommerce Manager & wider teams to ensure product launches
+                                        happen on time and products are assigned to all appropriate listing pages.</li>
+                                    <li>Maximise cross selling opportunities through product recommendations, continual
+                                        review of performance and placement.</li>
+                                    <li>Ensuring all promotional/sale activity is set up accurately and tested ahead of
+                                        launch working alongside Ecommerce executive.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Onsite Content</b><br>
+                                <ul>
+                                    <li>Monitoring performance of onsite content and proposing changes to maximise
+                                        revenue
+                                        and profit.</li>
+                                    <li>Working closely with Marketing, Buying and Ecommerce Manager to influence the
+                                        development/testing roadmap.</li>
+                                    <li> Ensure that each item on sale is fully optimized for copy and imagery for both
+                                        the
+                                        customer and for SEO.</li>
+                                    <li> Regular review of competitor activity to propose UX improvements/tests.</li>
+                                    <li> Support with UAT of new onsite features/capabilities as and when required.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Other</b>
+                                <ul>
+                                    <li>Troubleshooting website/pricing/customer issues and liaising with appropriate
+                                        teams to resolve issues and provide feedback in a timely manner.</li>
+                                    <li>Support wider team where appropriate, e.g. channel landing page testing.</li>
+                                    <li>Keep up to date with industry best practices and new platform features to ensure
+                                        we’re getting the most from the information/tools available.</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </div>
+                        <h4>What are we looking for?</h4>
+                        <ul>
+                            <li>Min 1 years ecommerce experience in Retail or similar B2C industry.</li>
+                            <li>A strong commercial mindset and customer first approach.</li>
+                            <li>Excellent data and analytics skills, with confident use of Excel to manipulate data into
+                                meaningful insight.</li>
+                            <li>Highly organised and methodical with ability to prioritise workload effectively.</li>
+                            <li>Excellent writing skills with an understanding of SEO content.</li>
+                            <li>Comfortable working in a fast-paced business.</li>
+                            <li>A passion for fashion/retail and detail but always seeks continuous improvement.</li>
+                            <li>Proactive and positive approach to problem solving - a can do attitude.</li>
+                            <li>Team player with excellent communication skills both internally and externally.</li>
+                        </ul>
+                        <h4>Location</h4>
+                        <p>South Manchester</p>
+                        <h4>Applications</h4>
+                        <p>To apply for this role please email <a
+                                href="mailto:ecomteam@beautyworks.co.uk?subject=Ecommerce Assistant Role">ecomteam@beautyworks.co.uk</a>
+                            with your CV and cover letter. All successful candidates will be notified of interview dates
+                            via email.</p>
+                    </span>
+                    <button class="card-btn" onclick="readMore('career3Dots','career3Text', 'career3Btn')"
+                        id="career3Btn" title="">Read More</button>
                 </div>
             </div>
-            <p>Please email customerservice@beautyworks.co.uk with CV and cover letter to apply by 31st of January 2020.
-            </p>
+        </div>
+    </div> -->
+
+
+    <div class="row">
+        <div class="col-xs-12" style="text-align: center;">
+            <h4>No posts found</h4>
+            <p>Please check back soon</p>
         </div>
     </div>
 
